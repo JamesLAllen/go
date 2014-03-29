@@ -10,9 +10,13 @@
 				<article class="article-index" <?php post_class(); ?>>
 					<div class="entry-thumbnail">
 						<a href="<?php the_permalink(); ?>" rel="bookmark">
+						<?php
+						if(has_post_thumbnail()) :?>
 						<?php 
 						   the_post_thumbnail('large');
 						?>
+						<?php else :?>
+						<?php endif;?>
 						</a>
 					</div>
 					<header class="entry-header">

@@ -77,6 +77,22 @@ module.exports = function(grunt) {
             }]
         }
     },
+    rsync: {
+        options: {
+            args: ["--verbose"],
+            exclude: [".git*","*.scss","node_modules","assets/fonts","assets/images","assets/js","assets/scss"],
+            recursive: true
+        },
+
+        prod: {
+            options: {
+                src: "./",
+                dest: "/var/www/ericthor.com/htdocs/wp-content/themes/go",
+                host: "root@ericthor.com",
+                syncDestIgnoreExcl: true
+            }
+        },
+    },
     watch: {
       grunt: { files: ['Gruntfile.js'] },
       sass: {
@@ -119,7 +135,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-wp-version');
+  grunt.loadNpmTasks("grunt-rsync")
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+
 
   // Register tasks
   grunt.registerTask('default', [

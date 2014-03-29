@@ -10,7 +10,7 @@
 	<section class="widget connect">
 		<h3 class="widget-title">Keep Up With Me</h3>
 		<ul class="links">
-			<li class="button block"><a href="http://www.twitter.com/ericedwardthor"><span aria-hidden="true" data-icon="&#xe613;" class="icon icon-user"></span>Portfolio</a></li>
+			<li class="button block"><a href="/portfolio"><span aria-hidden="true" data-icon="&#xe613;" class="icon icon-user"></span>Portfolio</a></li>
 			<li class="button block twitter"><a href="http://www.twitter.com/ericedwardthor"><span aria-hidden="true" data-icon="&#xe603;" class="icon icon-twitter1"></span>Twitter</a></li>
 			<li class="button block github"><a href="http://www.github.com/ericthor"><span aria-hidden="true" data-icon="&#xe602;" class="icon icon-github"></span>Github</a></li>
 			<li class="button block googleplus"><a href="https://plus.google.com/101370510073069380963/"><span aria-hidden="true" data-icon="&#xe604;" class="icon icon-googleplus1"></span>Google</a></li>
@@ -28,7 +28,7 @@
 			</form>
 		</div>
 		<ul class="links">
-			<li class="button block rss"><a href="https://plus.google.com/101370510073069380963/"><span aria-hidden="true" data-icon="&#xe60a;" class="icon icon-feed2"></span>RSS</a></li>
+			<li class="button block rss"><a href="http://ericthor.com/feed/"><span aria-hidden="true" data-icon="&#xe60a;" class="icon icon-feed2"></span>RSS</a></li>
 		</ul>
 	</section>
 </aside><!-- /.sidebar -->
