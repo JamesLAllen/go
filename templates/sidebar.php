@@ -28,7 +28,7 @@
 			</form>
 		</div>
 		<ul class="links">
-			<li class="button block rss"><a href="http://ericthor.com/feed/"><span aria-hidden="true" data-icon="&#xe60a;" class="icon icon-feed2"></span>RSS</a></li>
+			<li class="button block rss"><a href="/feed"><span aria-hidden="true" data-icon="&#xe60a;" class="icon icon-feed2"></span>RSS</a></li>
 		</ul>
 	</section>
 </aside><!-- /.sidebar -->

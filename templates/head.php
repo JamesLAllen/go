@@ -14,6 +14,8 @@
   <link rel="alternate" type="application/atom+xml" title="Feed" href="http://ericthor.com/feed/" />
   <link rel="alternate" type="application/rss+xml" title="Eric Thor Feed" href="<?php echo esc_url(get_feed_link()); ?>">
   <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700|Raleway:700,300,400' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri() . "/favicon.ico" ?>">
+  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri() . "/apple-touch-icon-precomposed.png" ?>">
   <?php wp_head(); ?>
   <?php if ( is_post_template('single-full.php') ) { ?>
   <!-- Special Styles -->
