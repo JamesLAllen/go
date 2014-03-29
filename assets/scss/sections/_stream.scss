@@ -1,0 +1,54 @@
+.stream {
+	a {
+		display: block;
+		text-decoration: none;
+	}
+	a:hover {color: $white;}
+}
+.stream .article-index{
+	margin-bottom: .5rem;
+	@media #{$medium-up} {
+		margin-bottom: 0;
+		padding: .5rem;
+		border-radius: 8px;
+		@include transition (all 0.2s ease-in-out);
+	}
+}
+
+.stream .entry-title{
+	margin: 0;
+}
+
+.stream .entry-title a{
+	text-decoration: none;
+	font-size: $m1;
+	margin: 0; 
+	@media #{$medium-up} {
+		color: $dark;
+		@include transition (all 0.2s ease-in-out);
+	}
+}
+.stream .entry-meta .entry-date {	
+	@media #{$medium-up} {
+		color: $light;
+		@include transition (all 0.2s ease-in-out);
+	}
+}
+.stream .article-index:hover {
+	@media #{$medium-up} {
+		background: $blue;
+		@include transition (all 0.2s ease-in-out);
+		.entry-title a{
+			color: $white-pure;
+			@include transition (all 0.2s ease-in-out);
+		}
+		.entry-meta .entry-date {
+			color: $white;
+			@include transition (all 0.2s ease-in-out);
+		}
+	}
+}
+
+.stream .post-nav #pagination .button a {
+	width: 100%;
+}

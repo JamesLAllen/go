@@ -1,0 +1,13 @@
+filesnode_modules
+assets/css/main.min.css.map
+*.DS_Store
+/oldassets/*
+assets/build/*
+/bower_components/*
+/node_modules/*
+bower_components
+node_modules
+.npm-debug.log
+tmp
+.DS_Store
+npm-debug.log

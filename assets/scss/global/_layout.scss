@@ -1,0 +1,41 @@
+.wrap {
+	@include grid-row();
+}
+
+.main {
+	@include grid-column(12);
+	@media #{$medium-up} {
+		@include grid-column($columns:8);
+	}
+	@media #{$large-up} {
+		@include grid-column($columns:9);
+	}
+}
+
+.sidebar {
+	@include grid-column(12);
+	@media #{$medium-up} {
+		@include grid-column($columns:4);
+	}
+	@media #{$large-up} {
+		@include grid-column($columns:3);
+	}
+}
+
+
+.home .main {
+	padding: 0;
+}
+.home .feature {
+	@include grid-column(12);
+	@media #{$large-up} {
+	@include grid-column($columns:8,$push:4);
+	}
+}
+
+.home .stream {
+	@include grid-column(12);
+	@media #{$large-up} {
+	@include grid-column($columns:4,$pull:8);
+	}
+}

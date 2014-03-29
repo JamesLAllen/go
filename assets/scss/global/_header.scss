@@ -1,0 +1,44 @@
+//File for main Header
+.site-header {
+  background: $black;
+  @media #{$medium-up} {
+    margin: 1rem 0 2rem 0;
+    background: $white-pure;
+  }
+}
+.site-banner {
+  text-align: center;
+}
+.site-title {
+  margin: 0;
+  padding-top: $m1;
+}
+.site-logo {
+  border-radius: 8px;
+}
+
+.site-description {
+  font-size: $m1;
+  margin: 0;
+  padding-bottom: $m1;
+  font-family: $serif;
+  font-weight: normal;
+  font-style: italic;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  @media #{$medium-up} {
+    padding-top: 1.5rem;
+    font-size: $m2;
+    color: $black;
+  }
+}
+.home .site-description {
+  @include fadeindelay(2s);
+}
+.home .site-logo {
+  @include fadeindown(1s);
+  @include transition (all 0.5s ease-in-out);
+}
+.home .site-logo:hover {
+  @include transition (all 1s ease-in-out);
+}

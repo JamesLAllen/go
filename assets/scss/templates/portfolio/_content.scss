@@ -1,0 +1,179 @@
+.page-content {
+	font-family: $sans;
+	font-size: $m1;
+}
+.page-content h2 {
+	text-align: center;
+	letter-spacing: 1px;
+	@media #{$medium-up} {
+		font-size: $m6;
+	}
+}
+.page-content h3 {
+	margin: 0;
+}
+
+.row {
+	@include grid-row();
+	max-width: 100%;
+}
+
+.project, .skill {
+	@include grid-column(12);
+	@media #{$medium-up} {
+		padding-bottom: 3rem;
+	}
+	@media #{$large-up} {
+		padding-bottom: 3rem;
+	}
+	h2 {
+		@media #{$medium-up} {
+			padding-bottom: 3rem;
+			padding-top: 3rem;
+		}
+		@media #{$large-up} {
+			padding-bottom: 3rem;
+			padding-top: 3rem;
+		}
+	}
+	.project-items, .skill-items {
+		@include block-grid(1);
+		@media #{$medium-up} {
+			@include block-grid(3);
+		}
+		@media #{$large-up} {
+			@include block-grid(4);
+		}
+		.project-description {
+			width: 100%;
+			padding-right: 0 !important;
+			@media #{$large-up} {
+				width: 25%;
+				padding-left: 2.25rem;
+			}
+		}
+	}
+	.project-items-ericthor {
+		@include block-grid(1);
+		@media #{$medium-up} {
+			@include block-grid(2);
+		}
+		@media #{$large-up} {
+			@include block-grid(2);
+		}
+	}
+	.skill-items {
+		@media #{$large-up} {
+			@include block-grid(6);
+		}
+		img {
+			max-height: 100px;
+			width: auto;
+			margin: 1rem auto;
+			display: block;
+		}
+	}
+	li p {text-align: center;}
+	.project-description p {
+		text-align: left;
+	}
+	li a img {
+		border: solid 4px $white;
+		background: $white;
+	}
+}
+
+.project-ericthor {
+	.project-content, .project-description {
+		@include grid-column(12);
+	}
+	.project-content {
+		@media #{$large-up} {
+			@include grid-column(8);
+		}
+	}
+	.project-description {
+		@media #{$large-up} {
+			@include grid-column(4);
+		}
+	}
+}
+#about-ericthor {
+	padding-bottom: 6rem;
+	background: $blue
+}
+.about-ericthor {
+	h2 {color: $white;}
+	h2 {
+		@media #{$medium-up} {
+			padding-bottom: 3rem;
+			padding-top: 3rem;
+		}
+		@media #{$large-up} {
+			padding-bottom: 3rem;
+			padding-top: 3rem;
+		}
+	}
+	p {color: $white;}
+	.about-picture, .about-bio {
+		@include grid-column(12);
+		@media #{$medium-up} {
+			@include grid-column(6);
+		}
+	}
+	a {
+		color: $white;
+	}
+	a:hover {
+		color: $white-pure;
+	}
+}
+
+
+
+.job, .dlp, .education {
+	padding-bottom: 3rem;
+	@include grid-column(12);
+	@media #{$large-up} {
+		padding-bottom: 3rem;
+		@include grid-column($columns:6,$center:true);
+	}
+	h2 {
+		@media #{$medium-up} {
+			padding-bottom: 3rem;
+			padding-top: 3rem;
+		}
+		@media #{$large-up} {
+			padding-bottom: 3rem;
+			padding-top: 3rem;
+		}
+	}
+	.other-title {
+		margin: 1rem 0;
+	}
+}
+.row-education {
+	background: #d21034;
+	h2 {
+		color: $white;
+	}
+	h3 {
+		color: $white;
+	}
+	ul li {
+		color: $white;
+	}
+}
+.dlp {
+}
+
+.project-ericthor {background: $blue;}
+.project-dlp {background: #454938;}
+.skill-web {background: $white;}
+.jobs {background: $white;}
+
+.project-ericthor, .project-dlp {
+	color: $white;
+	a {color: $white;}
+	a:hover {color: $white-pure;}
+}

@@ -1,0 +1,107 @@
+//Vendor
+@import "../../settings/settings"; //Foundation Settings
+@import "foundation/components/grid"; // Foundation Grid
+@import "bourbon"; // Bourbon Mixins
+@import "../../settings/variables"; //My Variables
+@import "../../settings/mixins"; //My Mixins
+
+@media #{$medium-up} {
+	.site-header {
+			margin: 0;
+	}
+	.site-title {
+			padding: 0;
+			display: none;
+	}
+	.site-logo {
+			margin: 1rem;
+			width: 75px;
+			height: auto;
+			float: left;
+			border-radius: 4px;
+	}
+	.site-description {
+			display: none;
+	}
+	.wrap {
+			max-width: 100%;
+	}
+	.main {
+			width: 100%;
+			padding: 0;
+			float: none;
+	}
+	.article {
+			width: 100%;
+			max-width: 100%;
+			margin: 0 auto;
+	}
+	.entry-header {
+		background: $black;
+		color: $white-pure;
+		padding: 15rem $m1;
+		margin-bottom: 1.5rem;
+		text-align: center;
+		.entry-title {
+			font-size: 5rem;
+			@include fadeinleftbig(4s);
+		}
+		.entry-description {
+			color: $white;
+			max-width: 35rem;
+			margin: 0 auto;
+		}
+	}
+	.entry-content p {
+		max-width: 40rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 $m1;
+	}
+	.entry-content-asset {
+		max-width: 65rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 $m1; 
+	}
+	.entry-content {
+		h1, h2, h3, h4, h5 {
+			padding: 0 $m1;
+			max-width: 40rem;
+	  	margin: 1.5rem auto;
+		}
+		figure.hammy-responsive {
+			text-align: center;
+		}
+		img {
+		  text-align: center;
+		  padding: 0 $m1;
+			max-width: 65rem;
+	  	margin: 1.5rem auto;
+		  height: auto;
+		}
+	}
+	.entry-footer {
+		padding: 0 $m1;
+		max-width: 40rem;
+	  margin: 1.5rem auto;
+	}
+	.sidebar-wrap{
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+	.sidebar {
+		@include grid-row(); 
+		padding: 0;
+		.about, .connect, .subscribe {
+			@media #{$medium-up} {
+				@include grid-column($columns:6);
+			}
+		}
+		.about {
+			@media #{$medium-up} { 
+				padding: 0;
+			}
+		}
+	}
+}

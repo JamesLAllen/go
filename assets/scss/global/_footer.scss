@@ -1,0 +1,8 @@
+.content-info {
+	font-family: $serif;
+	font-style: italic;
+	text-align: center;
+	@media #{$medium-up} {
+		margin: 6rem 0;
+	}
+}

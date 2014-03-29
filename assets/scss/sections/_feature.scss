@@ -1,0 +1,88 @@
+.feature {
+	@media #{$small-only} {
+		padding: 0 !important;
+	}
+	@media #{$medium-only} {
+		padding: 0 !important;
+	}
+	.entry-header, .button {
+		padding: 0 1.5rem;
+	}
+	.article-index {
+		margin-bottom: 1rem;
+		@media #{$medium-up} {
+			margin-bottom: .5rem;
+			padding-bottom: 1rem;
+			border-radius: 8px;
+			background: $white;
+			@include transition (all 0.5s ease-in-out);
+			margin-bottom: 2rem;
+		}
+		.entry-meta {
+			display: none;
+		}
+		.entry-thumbnail {
+			@media #{$medium-up} {
+			}
+		}
+		img {
+			width: 100%;
+			height: auto;
+			@media #{$medium-up} {
+				opacity: .9;
+				border-top-right-radius: 8px;
+				border-top-left-radius: 8px;
+				@include transition (all 0.5s ease-in-out);
+
+			}
+		}
+		.entry-header a {
+			color: $black;
+			@media #{$medium-up} {
+				color: $black;
+			}
+		}
+	  .entry-description-index {
+	  	margin: 0;
+	  }
+		.entry-description-index p {
+			@media #{$medium-up} {
+				color: $dark;
+				font-size: $m1;
+				@include transition (all 0.25s ease-in-out);
+			}
+		}
+		.entry-title { 
+			font-size: $m4;
+			margin: 1rem 0 1rem 0;
+		}
+		@media #{$medium-only} {
+			margin-left: 1rem;
+		}
+	}
+	.article-index:hover {
+		@media #{$medium-up} {
+			background: $blue;
+			@include transition (all 0.5s ease-in-out);
+			.entry-header a {
+				color: $white;
+				@include transition (all 0.25s ease-in-out);
+			}
+			.entry-description-index p {
+				color: $white;
+				@include transition (all 0.25s ease-in-out);
+			}
+			.entry-description-index {
+				color: $white;
+				@include transition (all 0.25s ease-in-out);
+			}
+			.button a {
+				color: $white;
+				background: $blue
+			}
+			img {
+				opacity: 1;
+			}
+		}
+	}
+}

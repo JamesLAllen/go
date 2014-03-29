@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../icomoon.eot') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+	display: inline-block;
+	text-align: center;
+	float: right;
+	line-height: $line-base;
+}
+.icon-text {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.icon-home:before {
+	content: "\e600";
+}
+.icon-reddit:before {
+	content: "\e601";
+}
+.icon-github:before {
+	content: "\e602";
+}
+.icon-twitter1:before {
+	content: "\e603";
+}
+.icon-googleplus1:before {
+	content: "\e604";
+}
+.icon-googleplus2:before {
+	content: "\e605";
+}
+.icon-facebook:before {
+	content: "\e606";
+}
+.icon-facebook2:before {
+	content: "\e607";
+}
+.icon-twitter2:before {
+	content: "\e608";
+}
+.icon-feed:before {
+	content: "\e609";
+}
+.icon-feed2:before {
+	content: "\e60a";
+}
+.icon-youtube:before {
+	content: "\e60b";
+}
+.icon-youtube2:before {
+	content: "\e60c";
+}
+.icon-vimeo:before {
+	content: "\e60d";
+}
+.icon-vimeo2:before {
+	content: "\e60e";
+}
+.icon-bubble:before {
+	content: "\e60f";
+}
+.icon-clock:before {
+	content: "\e610";
+}
+.icon-clock2:before {
+	content: "\e611";
+}
+.icon-menu:before {
+	content: "\e612";
+}
+.icon-user:before {
+	content: "\e613";
+}
+.icon-feed3:before {
+	content: "\e614";
+}
+.icon-podcast:before {
+	content: "\e615";
+}
+.icon-headphones:before {
+	content: "\e616";
+}
+.icon-play:before {
+	content: "\e617";
+}
+.icon-arrow-up:before {
+	content: "\e618";
+}
+.icon-arrow-down:before {
+	content: "\e619";
+}
+.icon-arrow-right:before {
+	content: "\e61a";
+}
+.icon-arrow-left:before {
+	content: "\e61b";
+}

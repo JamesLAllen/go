@@ -1,0 +1,40 @@
+//About
+.widget .widget-title {
+	text-align: center;
+	color: $dark;
+	margin:1.5rem 0;
+}
+.about {
+	border-radius: 8px;
+	background: $white;
+	p {
+		color: $black;
+		-webkit-font-smoothing: antialiased;
+	}
+	.about-portrait {
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+	}
+	.about-content {
+		font-family: $serif;
+		font-size: $m1;
+		padding: $m0 $m1;
+	}
+}
+
+//Connect & Subscribe
+.connect, .subscribe {
+	.links {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+/* MailChimp Form Embed Code - Slim - 08/17/2011 */
+#mc_embed_signup form {display:block; position:relative; text-align:left; padding:0; margin-bottom: $m1;}
+#mc_embed_signup input {border:3px solid $white;border-radius: 8px; -webkit-appearance:none;}
+#mc_embed_signup input:focus {border-color:$blue;}
+#mc_embed_signup label {display:block; font-size:$m1; padding-bottom:10px; font-weight:bold;}
+#mc_embed_signup input.email {display:block; padding:.5rem 0; margin:1rem 0; width:100%; text-indent:5px;}
+#mc_embed_signup input.button {display:block;clear:both; background-color: $white; border: 0 none; border-radius:8px; color: $gray; cursor: pointer; display: inline-block; font-size:$m1; font-weight: bold;padding:$m1; text-align: center; white-space: nowrap; width: 100%;@include transition (all 0.25s ease-in-out);}
+#mc_embed_signup .button:hover {background-color:$blue;color:$white;@include transition (all 0.25s ease-in-out);}    

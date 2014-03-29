@@ -1,0 +1,19 @@
+.related {
+	font-family: $serif;
+	font-size: $m0;
+	h3 {
+		font-family: $sans;
+	}
+}
+.related ul {
+	margin-left: 0;
+	padding: 0;
+	list-style: none;
+	h5 {
+		font-family: $sans;
+		margin: 0;
+	}
+	li {
+		margin-bottom: 1.5rem;
+	}
+}
