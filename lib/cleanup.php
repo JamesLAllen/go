@@ -126,7 +126,7 @@ add_filter('body_class', 'roots_body_class');
  * @link http://www.readability.com/publishers/guidelines#publisher
  */
 function roots_embed_wrap($cache, $url, $attr = '', $post_ID = '') {
-  return '<div class="entry-content-asset">' . $cache . '</div>';
+  return '<figure class="entry-content-asset">' . $cache . '</figure>';
 }
 add_filter('embed_oembed_html', 'roots_embed_wrap', 10, 4);
 

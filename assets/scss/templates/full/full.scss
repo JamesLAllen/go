@@ -70,14 +70,13 @@
 			max-width: 40rem;
 	  	margin: 1.5rem auto;
 		}
-		figure.hammy-responsive {
-			text-align: center;
+		figure {
+			max-width: 65rem;
+			margin: 1.5rem auto;
 		}
 		img {
 		  text-align: center;
 		  padding: 0 $m1;
-			max-width: 65rem;
-	  	margin: 1.5rem auto;
 		  height: auto;
 		}
 	}
